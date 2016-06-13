@@ -7,15 +7,19 @@
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>testHessianClient</artifactId>
+	<artifactId>helloHessianWithSpringClient</artifactId>
 	<packaging>war</packaging>
-	<name>testHessianClient Maven Webapp</name>
+	<name>helloHessianWithSpringClient Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -28,7 +32,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>testHessianClient</finalName>
+		<finalName>helloHessianWithSpringClient</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
