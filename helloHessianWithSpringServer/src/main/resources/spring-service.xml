@@ -11,11 +11,25 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
+	<!-- <task:annotation-driven/> -->
+	<!-- 开启自动扫描 -->
+	<context:component-scan base-package="com"></context:component-scan>
+	<!-- 启用注解 -->
+	<context:annotation-config />
+
+
 	<bean id="helloService" class="com.ljx.service.impl.HelloImpl" />
 
 	<bean name="/helloService.http"
 		class="org.springframework.remoting.caucho.HessianServiceExporter">
 		<property name="service" ref="helloService" />
 		<property name="serviceInterface" value="com.ljx.service.IHello" />
+	</bean>
+	
+	<!-- service 直接通过注解方式注入 -->
+	<bean name="/userService.http"
+		class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="service" ref="userService" />
+		<property name="serviceInterface" value="com.ljx.service.IUserService" />
 	</bean>
 </beans>
