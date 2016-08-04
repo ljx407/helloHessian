@@ -2,8 +2,8 @@ package com.ljx.service.impl;
 
 import org.springframework.stereotype.Service;
 
+import com.ljx.interfaces.IUserService;
 import com.ljx.model.User;
-import com.ljx.service.IUserService;
 
 @Service("userService")
 public class UserServiceImpl implements IUserService{

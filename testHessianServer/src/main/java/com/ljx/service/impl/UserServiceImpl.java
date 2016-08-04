@@ -1,7 +1,7 @@
 package com.ljx.service.impl;
 
+import com.ljx.interfaces.IUserService;
 import com.ljx.model.User;
-import com.ljx.service.IUserService;
 
 public class UserServiceImpl implements IUserService {
 

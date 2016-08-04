@@ -3,7 +3,7 @@ package com.ljx.service.impl;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import com.ljx.service.IHello;
+import com.ljx.interfaces.IHello;
 
 public class HelloImpl implements IHello {
 	

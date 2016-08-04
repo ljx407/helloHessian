@@ -4,11 +4,11 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.ljx.interfaces.IHello;
+import com.ljx.interfaces.IUserService;
 import com.ljx.model.User;
-import com.ljx.service.IHello;
-import com.ljx.service.IUserService;
 
-
+@SuppressWarnings("resource")
 public class TestHelloWithSpringClient {
 	
 	@Test

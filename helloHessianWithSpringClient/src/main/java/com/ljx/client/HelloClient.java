@@ -6,7 +6,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import com.caucho.hessian.client.HessianProxyFactory;
-import com.ljx.service.IHello;
+import com.ljx.interfaces.IHello;
 
 public class HelloClient {
 	private static final Logger logger = LogManager.getLogger(HelloClient.class);
